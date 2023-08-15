@@ -2,13 +2,29 @@
   "name": "@tenkus47/tibetan-segmentor",
   "version": "1.0.3",
   "description": "segment tibetan text",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "prepare": "npm run build"
   },
-  "author": "",
-  "license": "ISC",
+  "homepage": "https://github.com/tenkus47/tibetan-text-segment#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tenkus47/tibetan-text-segment.git"
+  },
+  "keywords": [
+    "tibetan",
+    "segment",
+    "text"
+  ],
+  "author": "tenkus47@gmail.com",
+  "license": "MIT",
   "devDependencies": {
-    "@types/node": "^20.5.0"
-  }
+    "@types/node": "^20.5.0",
+    "typescript": "^5.1.6"
+  },
+  "files": [
+    "lib/**/*"
+  ]
 }
