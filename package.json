@@ -1,6 +1,6 @@
 {
   "name": "@tenkus47/tibetan-segmentor",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "segment tibetan text",
   "main": "index.js",
   "scripts": {
