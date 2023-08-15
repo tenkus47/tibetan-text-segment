@@ -1,11 +1,14 @@
 {
   "name": "@tenkus47/tibetan-segmentor",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "segment tibetan text",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.5.0"
+  }
 }

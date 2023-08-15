@@ -1,4 +1,4 @@
-function makeSegment(text, start) {
+function makeSegment(text: string, start: number) {
   return {
     text: text,
     start: start,
@@ -6,12 +6,12 @@ function makeSegment(text, start) {
   };
 }
 
-function segmentTibetanText(text) {
+function segmentTibetanText(text: string) {
   const breaks = "༄༅།";
   const spaces = " ་";
   const newline = "\n";
 
-  let segments = [];
+  let segments: { text: string; start: number; length: number }[] = [];
   let currentSegment = "";
   let currentStart = 0;
   let inBreak = false;
@@ -71,10 +71,10 @@ function segmentTibetanText(text) {
   return segments;
 }
 
-function splitText(text) {
+function splitText(text: string) {
   let segment = segmentTibetanText(text);
   let data = segment.map((item) => item.text);
-  let finalItem = [];
+  let finalItem: string[] = [];
   for (var i = 0; i < data.length; i++) {
     if (data[i].startsWith("\n")) {
       let temp = data[i].split("\n");
@@ -168,4 +168,4 @@ function splitText(text) {
   });
 }
 
-module.exports = splitText;
+export { splitText, segmentTibetanText };
